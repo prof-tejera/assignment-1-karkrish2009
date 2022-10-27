@@ -1,6 +1,7 @@
 import './CountdownTimer.css';
 import {useState, useEffect} from 'react';
 
+  /*
 const defaultRemainingTime = {
   seconds: '00',
   minutes: '00',
@@ -8,7 +9,7 @@ const defaultRemainingTime = {
   days: '00'
 }
 
-  /*
+
 function getRemaingTime(countdownGoal) {
 
   //console.log("countdown value", countdownGoal);
@@ -49,7 +50,7 @@ const Timer = ({countdownGoal}) => {
 
   const [remainingTime, setRemainingTime] = useState(countdownGoal);
   const [timerOn, setTimerOn] = useState(false);
-  const [firstTime, setFirstTime] = useState(true);
+//  const [firstTime, setFirstTime] = useState(true);
 
 
   useEffect(() => {

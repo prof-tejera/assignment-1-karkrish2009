@@ -1,13 +1,13 @@
 import './App.css';
 import XYtimer from './XYTimer';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 
 
 const XY = () => {
 
   const [time, setTime] = useState(0);
-  const [number, setNumber] = useState(0);
+  //const [number, setNumber] = useState(0);
   const [countdowns, setCountdowns] = useState([]);
 
   const handleInput = event => {
@@ -22,16 +22,14 @@ const XY = () => {
       console.log("Here in setting countdowns", countdowns[i], countdowns[0]);
     }
 
-    setNumber(n);
+    //setNumber(n);
     setCountdowns(countdowns);
 
     //console.log(countdownTime);
     //console.log("in handleInput", parseInt(event.target.value), typeof(parseInt(event.target.value)));
     //setTime(parseInt(event.target.value)*60*1000);
   };
-  const logValue = () => {
-    console.log(time);
-  };
+
   return (
     <div className="App">
       <h3 className="number-of-sets">{"Please input number of sets \n"}</h3>

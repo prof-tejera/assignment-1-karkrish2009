@@ -1,5 +1,5 @@
 import './CountdownTimer.css';
-import {useState, useEffect} from 'react';
+//import {useState, useEffect} from 'react';
 import React from 'react';
 
 const Stopwatch = () =>  {
@@ -27,16 +27,16 @@ const Stopwatch = () =>  {
       <span>{("0" + ((time/10)%100)).slice(-2)}</span>
       </div>
       <div>
-      {!timerOn && time == 0 && (
+      {!timerOn && time === 0 && (
         <button onClick={() => setTimerOn(true)}>Start</button>
       )}
-      {!timerOn && time != 0 && (
+      {!timerOn && time !== 0 && (
         <button onClick={() => setTimerOn(true)}>Resume</button>
       )}
       {timerOn && (
         <button onClick={() => setTimerOn(false)}>Stop</button>
       )}
-      {!timerOn && time != 0 && (
+      {!timerOn && time !== 0 && (
         <button onClick={() => setTime(0)}>Reset</button>
       )}
       </div>

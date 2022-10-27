@@ -1,6 +1,6 @@
 import './App.css';
 import Timer from './Timer';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 const Countdown = () => {
   const [time, setTime] = useState(0);
@@ -8,9 +8,6 @@ const Countdown = () => {
   const handleInput = event => {
     console.log("in handleInput", parseInt(event.target.value), typeof(parseInt(event.target.value)));
     setTime(parseInt(event.target.value)*60*1000);
-  };
-  const logValue = () => {
-    console.log(time);
   };
   return (
     <div className="App">
