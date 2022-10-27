@@ -1,37 +1,14 @@
 import React from "react";
 import './App.css';
-//import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import Stopwatch from "./components/timers/Stopwatch";
 import Countdown from "./components/timers/Countdown";
 import XY from "./components/timers/XY";
 import Tabata from "./components/timers/Tabata"
 
-//import DocumentationView from "./views/DocumentationView";
-//import TimersView from "./views/TimersView";
 import {useState} from 'react';
 
-/*
-const Container = styled.div`
-  background: #f0f6fb;
-  height: 100vh;
-  overflow: auto;
-`;
 
-const Nav = () => {
-  return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Timers</Link>
-        </li>
-        <li>
-          <Link to="/docs">Documentation</Link>
-        </li>
-      </ul>
-    </nav>
-  );
-};*/
 const App = () => {
 
   const [timer, setTimer] = useState("");
