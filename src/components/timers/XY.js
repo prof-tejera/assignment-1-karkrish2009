@@ -6,7 +6,7 @@ import {useState} from 'react';
 
 const XY = () => {
 
-  const [time, setTime] = useState(0);
+  //const [time, setTime] = useState(0);
   //const [number, setNumber] = useState(0);
   const [countdowns, setCountdowns] = useState([]);
 
@@ -15,7 +15,7 @@ const XY = () => {
     const t = parseInt(document.getElementById("countdownTime").value);
     console.log("in app n ", n);
     console.log("in app t ", t);
-    setTime(t*60*1000);
+    //setTime(t*60*1000);
     let countdowns = [];
     for (let i = 0; i < n; i++ ) {
       countdowns.push(t*60*1000);
