@@ -78,7 +78,7 @@ const Timer = ({countdownGoal}) => {
 
   <div>
     <h3 class="timer-header">{"Welcome to the timer"}</h3>
-       <button onClick={() => {setRemainingTime(countdownGoal); setFirstTime(false);}}>Set</button>
+       <button onClick={() => {setRemainingTime(countdownGoal);}}>Set</button>
    <div class="countdown-timer">
 
     <div class="time">
